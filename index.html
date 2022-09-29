@@ -5,12 +5,127 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>FitTeacher</title>
   <link rel="stylesheet" href="./style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+  <header class="header">
+
+    <div class="header-conteudo container">
+      <picture>
+        <img src="./imgs/avatar.svg" alt="">
+      </picture>
+      <p>Your Name</p>
+      <p>Personal Trainer</p>
+    </div>
+
+    <nav class="header-conteudo container">
+
+      <ul>
+
+        <li>
+          <a href="./registrar.html">
+            <img src="./imgs/registro.svg" alt="">
+            <h1 class="font-p">Registrar</h1>
+          </a>
+        </li>
+
+        <li>
+          <a href="./alunos.html">
+            <img src="./imgs/alunos.svg" alt="">
+            <h1 class="font-p">Alunos</h1>
+          </a>
+        </li>
+
+        <li>
+          <a href="./configuracoes.html">
+            <img src="./imgs/configurar.svg" alt="">
+            <h1 class="font-p">Configurar</h1>
+          </a>
+        </li>
+
+      </ul>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="introduction" aria-label="Introdução">
+
+      <article class="logo">
+        <div class="logo-content container">
+          <a href="./index.html">
+            <h1 class="font-logo">FitTeacher</h1>
+          </a>
+
+          <form action="">
+            <input type="text" name="search" id="search" placeholder="Procurar">
+          </form>
+
+          <ul>
+            <li><img src="./imgs/icons/sino.svg" alt=""></li>
+            <li><img src="./imgs/icons/settings.svg" alt=""></li>
+          </ul>
+        </div>
+      </article>
+
+      <div class="sidebar container">
+        <button class="sidebar-element">
+          <i class="bars"></i>
+          <i class="bars"></i>
+          <i class="bars"></i>
+        </button>
+      </div>
+
+      <div class="introduction-content container">
+        <div class="introduction-text">
+          <h1 class="principal-B">Uma forma mais fácil de ser personal trainer</h1>
+          <p class="font-p">Registre e verifique seus alunos rapidamente!</p>
+        </div>
+
+        <picture>
+          <img class="introduction-img" src="./imgs/header-fitness.png" alt="Homem correndo com um registro ao fundo">
+        </picture>
+      </div>
+
+    </section>
+
+    <section class="secoes" aria-label="Navegação secundaria">
+
+      <ul class="secoes-conteudo container">
+
+        <li class="secao-item">
+          <h2>Registrar</h2>
+          <p>Registre seus alunos rapidamente</p>
+          <a href="./registrar.html">Registrar</a>
+        </li>
+
+        <li class="secao-item">
+          <h2>Alunos</h2>
+          <p>Verifique seus alunos registrados</p>
+          <a href="./alunos.html">Acessar</a>
+        </li>
+
+        <li class="secao-item">
+          <h2>Configurações</h2>
+          <p>Acesse as configurações</p>
+          <a href="./configuracoes.html">Acessar</a>
+        </li>
+
+      </ul>
+
+    </section>
+
+  </main>
+
+  <script type="module" src="./script.js"></script>
 </body>
 
 </html>

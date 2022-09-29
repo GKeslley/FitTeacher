@@ -1,0 +1,100 @@
+main {
+  background: #fff;
+}
+
+.introduction {
+  display: grid;
+}
+
+.logo {
+  background: var(--cor-12);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.logo-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
+  padding: 25px 0px;
+}
+
+.logo-content h1 {
+  color: var(--cor-a2);
+  justify-self: start;
+  margin-bottom: 4px;
+}
+
+.logo-content ul {
+  display: flex;
+  justify-self: right;
+  gap: 0px 5px;
+}
+
+.logo-content input {
+  padding: 8px 10px;
+  width: 30rem;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.introduction-content {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.introduction-text {
+  padding-top: 30px;
+}
+
+.introduction-text h1 {
+  letter-spacing: 0.1rem;
+  margin-bottom: 15px;
+  color: var(--cor-c1);
+}
+
+.introduction-text p {
+  color: #1d1d1d;
+}
+
+.introduction-content img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.introduction-img {
+  background-image: url(../imgs/blob-haikei.svg);
+  max-width: 100%;
+  background-position: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1080px) {
+  .introduction-text p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .introduction-text {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .introduction-content {
+    grid-template-columns: 1fr;
+  }
+  .logo-content input {
+    width: 10rem;
+  }
+}
+
+@media (max-width: 630px) {
+  .introduction-content {
+    padding-top: 0px;
+  }
+}

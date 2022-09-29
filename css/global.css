@@ -1,0 +1,39 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  font-family: "Poppins";
+  height: 100vh;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+@media (max-width: 820px) {
+  body {
+    grid-template-columns: 200px 1fr;
+  }
+}
+
+@media (max-width: 630px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+  .header-conteudo li {
+    min-width: 100px;
+  }
+}
