@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar - FitTeacher</title>
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header-conteudo container">
+      <picture>
+        <img src="./imgs/avatar.svg" alt="">
+      </picture>
+      <p>Your Name</p>
+      <p>Personal Trainer</p>
+    </div>
+
+    <nav class="header-conteudo container">
+
+      <ul>
+        <li>
+          <a href="">
+            <img src="./imgs/registro.svg" alt="">
+            <h1 class="font-p">Registrar</h1>
+          </a>
+        </li>
+
+        <li>
+          <a href="./alunos.html">
+            <img src="./imgs/alunos.svg" alt="">
+            <h1 class="font-p">Alunos</h1>
+          </a>
+        </li>
+
+        <li>
+          <a href="./configuracoes.html">
+            <img src="./imgs/configurar.svg" alt="">
+            <h1 class="font-p">Configurar</h1>
+          </a>
+        </li>
+
+      </ul>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <article class="logo">
+
+      <div class="logo-content container">
+        <a href="./index.html">
+          <h1>FitTeacher</h1>
+        </a>
+
+        <form action="">
+          <input type="text" name="search" id="search" placeholder="Procurar">
+        </form>
+
+        <ul>
+          <li><img src="./imgs/icons/sino.svg" alt=""></li>
+          <li><img src="./imgs/icons/settings.svg" alt=""></li>
+        </ul>
+
+      </div>
+
+    </article>
+
+    <div class="sidebar container">
+      <button class="sidebar-element">
+        <i class="bars"></i>
+        <i class="bars"></i>
+        <i class="bars"></i>
+      </button>
+    </div>
+
+    <section aria-label="Registrar alunos">
+
+      <div class="registro container">
+
+        <div class="registro-text">
+          <h1 class="subtitulo">Registrar Aluno</h1>
+          <p class="font-pp">Coloque as informações do aluno abaixo!</p>
+        </div>
+
+        <form action="" id="myForm">
+
+          <div class="questionsUser">
+
+            <div class="question">
+              <label for="name">Nome</label>
+              <input type="text" name="name" id="name" required>
+            </div>
+
+            <div class="question">
+              <label for="idade">Idade</label>
+              <input type="number" name="idade" id="idade" required>
+            </div>
+
+            <div class="question">
+              <label for="peso">Peso(kg)</label>
+              <input type="number" name="peso" id="peso" required>
+            </div>
+
+          </div>
+
+          <div class="treinos">
+            <h2 class="subtitulo">Treinos</h2>
+
+            <ul class="treino-conteudo" data-content>
+
+              <li class="segunda" value="Segunda-Feira" data-treino>
+
+                <dl>
+                  <dt>Segunda-Feira</dt>
+
+                  <dd>
+                    <ul class="optionsTreino">
+                      <li>
+                        <label for="peito">Peito</label>
+                        <input class="option-input" type="checkbox" name="Peito" id="peito">
+                      </li>
+
+                      <li>
+                        <label for="ombro">Ombro</label>
+                        <input class="option-input" type="checkbox" name="Ombro" id="ombro">
+                      </li>
+
+                      <li>
+                        <label for="pernas">Pernas</label>
+                        <input class="option-input" type="checkbox" name="Pernas" id="pernas">
+                      </li>
+
+                      <li>
+                        <label for="biceps">Bíceps</label>
+                        <input class="option-input" type="checkbox" name="Biceps" id="biceps">
+                      </li>
+
+                      <li>
+                        <label for="triceps">Tríceps</label>
+                        <input class="option-input" type="checkbox" name="Triceps" id="triceps">
+                      </li>
+
+                      <li>
+                        <label for="costas">Costas</label>
+                        <input class="option-input" type="checkbox" name="Costas" id="costas">
+                      </li>
+
+                      <li>
+                        <label for="trapezio">Trapézio</label>
+                        <input class="option-input" type="checkbox" name="Trapézio" id="trapezio">
+                      </li>
+
+                      <li>
+                        <label for="abdominal">Abdominal</label>
+                        <input class="option-input" type="checkbox" name="Abdominal" id="abdominal">
+                      </li>
+
+                      <li>
+                        <label for="antebraco">Antebraço</label>
+                        <input class="option-input" type="checkbox" name="Antebraço" id="antebraco">
+                      </li>
+                    </ul>
+                  </dd>
+
+                </dl>
+              </li>
+
+              <li class="terca" value="Terça-Feira" data-treino>
+
+                <dl>
+                  <dt>Terça-Feira</dt>
+
+                  <dd>
+                    <ul class="optionsTreino">
+                      <li>
+                        <label for="peito2">Peito</label>
+                        <input class="option-input" type="checkbox" name="Peito2" id="peito2">
+                      </li>
+
+                      <li>
+                        <label for="ombro2">Ombro</label>
+                        <input class="option-input" type="checkbox" name="Ombro2" id="ombro2">
+                      </li>
+
+                      <li>
+                        <label for="pernas2">Pernas</label>
+                        <input class="option-input" type="checkbox" name="Pernas2" id="pernas2">
+                      </li>
+
+                      <li>
+                        <label for="biceps2">Bíceps</label>
+                        <input class="option-input" type="checkbox" name="Bíceps2" id="biceps2">
+                      </li>
+
+                      <li>
+                        <label for="triceps2">Tríceps</label>
+                        <input class="option-input" type="checkbox" name="Triceps2" id="triceps2">
+                      </li>
+
+                      <li>
+                        <label for="costas2">Costas</label>
+                        <input class="option-input" type="checkbox" name="Costas2" id="costas2">
+                      </li>
+
+                      <li>
+                        <label for="trapezio2">Trapézio</label>
+                        <input class="option-input" type="checkbox" name="Trapézio2" id="trapezio2">
+                      </li>
+
+                      <li>
+                        <label for="abdominal2">Abdominal</label>
+                        <input class="option-input" type="checkbox" name="Abdominal2" id="abdominal2">
+                      </li>
+
+                      <li>
+                        <label for="antebraco2">Antebraço</label>
+                        <input class="option-input" type="checkbox" name="Antebraço2" id="antebraco2">
+                      </li>
+                    </ul>
+                  </dd>
+
+                </dl>
+              </li>
+
+              <li class="quarta" value="Quarta-Feira" data-treino>
+
+                <dl>
+                  <dt>Quarta-Feira</dt>
+
+                  <dd>
+                    <ul class="optionsTreino">
+                      <li>
+                        <label for="peito3">Peito</label>
+                        <input class="option-input" type="checkbox" name="Peito3" id="peito3">
+                      </li>
+
+                      <li>
+                        <label for="ombro3">Ombro</label>
+                        <input class="option-input" type="checkbox" name="Ombro3" id="ombro3">
+                      </li>
+
+                      <li>
+                        <label for="pernas3">Pernas</label>
+                        <input class="option-input" type="checkbox" name="Pernas3" id="pernas3">
+                      </li>
+
+                      <li>
+                        <label for="biceps3">Bíceps</label>
+                        <input class="option-input" type="checkbox" name="Bíceps3" id="biceps3">
+                      </li>
+
+                      <li>
+                        <label for="triceps3">Tríceps</label>
+                        <input class="option-input" type="checkbox" name="Triceps3" id="triceps3">
+                      </li>
+
+                      <li>
+                        <label for="costas3">Costas</label>
+                        <input class="option-input" type="checkbox" name="Costas3" id="costas3">
+                      </li>
+
+                      <li>
+                        <label for="trapezio3">Trapézio</label>
+                        <input class="option-input" type="checkbox" name="Trapézio3" id="trapezio3">
+                      </li>
+
+                      <li>
+                        <label for="abdominal3">Abdominal</label>
+                        <input class="option-input" type="checkbox" name="Abdominal3" id="abdominal3">
+                      </li>
+
+                      <li>
+                        <label for="antebraco3">Antebraço</label>
+                        <input class="option-input" type="checkbox" name="Antebraço3" id="antebraco3">
+                      </li>
+                    </ul>
+                  </dd>
+
+                </dl>
+              </li>
+
+              <li class="quinta" value="Quinta-Feira" data-treino>
+
+                <dl>
+                  <dt>Quinta-Feira</dt>
+
+                  <dd>
+                    <ul class="optionsTreino">
+                      <li>
+                        <label for="peito4">Peito</label>
+                        <input class="option-input" type="checkbox" name="Peito4" id="peito4">
+                      </li>
+
+                      <li>
+                        <label for="ombro4">Ombro</label>
+                        <input class="option-input" type="checkbox" name="Ombro4" id="ombro4">
+                      </li>
+
+                      <li>
+                        <label for="pernas4">Pernas</label>
+                        <input class="option-input" type="checkbox" name="Pernas4" id="pernas4">
+                      </li>
+
+                      <li>
+                        <label for="biceps4">Bíceps</label>
+                        <input class="option-input" type="checkbox" name="Bíceps4" id="biceps4">
+                      </li>
+
+                      <li>
+                        <label for="triceps4">Tríceps</label>
+                        <input class="option-input" type="checkbox" name="Triceps4" id="triceps4">
+                      </li>
+
+                      <li>
+                        <label for="costas4">Costas</label>
+                        <input class="option-input" type="checkbox" name="Costas4" id="costas4">
+                      </li>
+
+                      <li>
+                        <label for="trapezio4">Trapézio</label>
+                        <input class="option-input" type="checkbox" name="Trapézio4" id="trapezio4">
+                      </li>
+
+                      <li>
+                        <label for="abdominal4">Abdominal</label>
+                        <input class="option-input" type="checkbox" name="Abdominal4" id="abdominal4">
+                      </li>
+
+                      <li>
+                        <label for="antebraco4">Antebraço</label>
+                        <input class="option-input" type="checkbox" name="Antebraço4" id="antebraco4">
+                      </li>
+                    </ul>
+                  </dd>
+
+                </dl>
+              </li>
+
+              <li class="sexta" value="Sexta-Feira" data-treino>
+
+                <dl>
+                  <dt>Sexta-Feira</dt>
+
+                  <dd>
+                    <ul class="optionsTreino">
+                      <li>
+                        <label for="peito5">Peito</label>
+                        <input class="option-input" type="checkbox" name="Peito5" id="peito5">
+                      </li>
+
+                      <li>
+                        <label for="ombro5">Ombro</label>
+                        <input class="option-input" type="checkbox" name="Ombro5" id="ombro5">
+                      </li>
+
+                      <li>
+                        <label for="pernas5">Pernas</label>
+                        <input class="option-input" type="checkbox" name="Pernas5" id="pernas5">
+                      </li>
+
+                      <li>
+                        <label for="biceps5">Bíceps</label>
+                        <input class="option-input" type="checkbox" name="Bíceps5" id="biceps5">
+                      </li>
+
+                      <li>
+                        <label for="triceps5">Tríceps</label>
+                        <input class="option-input" type="checkbox" name="Triceps5" id="triceps5">
+                      </li>
+
+                      <li>
+                        <label for="costas5">Costas</label>
+                        <input class="option-input" type="checkbox" name="Costas5" id="costas5">
+                      </li>
+
+                      <li>
+                        <label for="trapezio5">Trapézio</label>
+                        <input class="option-input" type="checkbox" name="Trapézio5" id="trapezio5">
+                      </li>
+
+                      <li>
+                        <label for="abdominal5">Abdominal</label>
+                        <input class="option-input" type="checkbox" name="Abdominal5" id="abdominal5">
+                      </li>
+
+                      <li>
+                        <label for="antebraco5">Antebraço</label>
+                        <input class="option-input" type="checkbox" name="Antebraço5" id="antebraco5">
+                      </li>
+                    </ul>
+                  </dd>
+
+                </dl>
+              </li>
+
+              <li class="sabado" value="Sabado" data-treino>
+
+                <dl>
+                  <dt>Sábado</dt>
+
+                  <dd>
+                    <ul class="optionsTreino">
+                      <li>
+                        <label for="peito6">Peito</label>
+                        <input class="option-input" type="checkbox" name="Peito6" id="peito6">
+                      </li>
+
+                      <li>
+                        <label for="ombro6">Ombro</label>
+                        <input class="option-input" type="checkbox" name="Ombro6" id="ombro6">
+                      </li>
+
+                      <li>
+                        <label for="pernas6">Pernas</label>
+                        <input class="option-input" type="checkbox" name="Pernas6" id="pernas6">
+                      </li>
+
+                      <li>
+                        <label for="biceps6">Bíceps</label>
+                        <input class="option-input" type="checkbox" name="Bíceps6" id="biceps6">
+                      </li>
+
+                      <li>
+                        <label for="triceps6">Tríceps</label>
+                        <input class="option-input" type="checkbox" name="Triceps6" id="triceps6">
+                      </li>
+
+                      <li>
+                        <label for="costas6">Costas</label>
+                        <input class="option-input" type="checkbox" name="Costas6" id="costas6">
+                      </li>
+
+                      <li>
+                        <label for="trapezio6">Trapézio</label>
+                        <input class="option-input" type="checkbox" name="Trapézio6" id="trapezio6">
+                      </li>
+
+                      <li>
+                        <label for="abdominal6">Abdominal</label>
+                        <input class="option-input" type="checkbox" name="Abdominal6" id="abdominal6">
+                      </li>
+
+                      <li>
+                        <label for="antebraco6">Antebraço</label>
+                        <input class="option-input" type="checkbox" name="Antebraço6" id="antebraco6">
+                      </li>
+                    </ul>
+                  </dd>
+
+                </dl>
+              </li>
+
+              <li class="domingo" value="Domingo" data-treino>
+
+                <dl>
+                  <dt>Domingo</dt>
+
+                  <dd>
+                    <ul class="optionsTreino">
+                      <li>
+                        <label for="peito7">Peito</label>
+                        <input class="option-input" type="checkbox" name="Peito7" id="peito7">
+                      </li>
+
+                      <li>
+                        <label for="ombro7">Ombro</label>
+                        <input class="option-input" type="checkbox" name="Ombro7" id="ombro7">
+                      </li>
+
+                      <li>
+                        <label for="pernas7">Pernas</label>
+                        <input class="option-input" type="checkbox" name="Pernas7" id="pernas7">
+                      </li>
+
+                      <li>
+                        <label for="biceps7">Bíceps</label>
+                        <input class="option-input" type="checkbox" name="Bíceps7" id="biceps7">
+                      </li>
+
+                      <li>
+                        <label for="triceps7">Tríceps</label>
+                        <input class="option-input" type="checkbox" name="Triceps7" id="triceps7">
+                      </li>
+
+                      <li>
+                        <label for="costas7">Costas</label>
+                        <input class="option-input" type="checkbox" name="Costas7" id="costas7">
+                      </li>
+
+                      <li>
+                        <label for="trapezio7">Trapézio</label>
+                        <input class="option-input" type="checkbox" name="Trapézio7" id="trapezio7">
+                      </li>
+
+                      <li>
+                        <label for="abdominal7">Abdominal</label>
+                        <input class="option-input" type="checkbox" name="Abdominal7" id="abdominal7">
+                      </li>
+
+                      <li>
+                        <label for="antebraco7">Antebraço</label>
+                        <input class="option-input" type="checkbox" name="Antebraço7" id="antebraco7">
+                      </li>
+                    </ul>
+                  </dd>
+
+                </dl>
+              </li>
+
+            </ul>
+          </div>
+
+          <button class="font-pp" data-submit type="submit">Enviar</button>
+        </form>
+
+        <p id="messageError"></p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script type="module" src="./script.js"></script>
+</body>
+
+</html>

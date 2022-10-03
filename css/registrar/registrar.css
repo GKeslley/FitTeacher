@@ -1,0 +1,146 @@
+.registro {
+  padding-bottom: 40px;
+}
+
+.registro button {
+  padding: 8px 20px;
+  border: none;
+  background: var(--cor-a2);
+  color: var(--cor-12);
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.registro button:hover {
+  background: #1d4c9e;
+}
+
+.registro-text {
+  padding-bottom: 30px;
+}
+
+.registro-text h1 {
+  margin-bottom: 5px;
+  color: var(--cor-c1);
+}
+
+.question label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.question label::after {
+  content: "*";
+  display: inline-block;
+  color: red;
+}
+
+.question input {
+  padding: 12px 8px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  border: 1px solid var(--cor-a2);
+  background: none;
+}
+
+.treinos {
+  margin-top: 30px;
+}
+
+.treino-conteudo li {
+  align-items: center;
+}
+
+.treino-conteudo li dt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+
+.treino-conteudo li dt::after {
+  content: "↴";
+  display: inline-block;
+  transition: 0.3s;
+  font-size: 1.5rem;
+}
+
+.treino-conteudo li dt.ativo::after {
+  transform: rotate(180deg);
+}
+
+.treino-conteudo > li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.treino-conteudo > li:nth-child(odd) {
+  background: #f2f2f2;
+}
+
+.option-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  background: none;
+  outline: none;
+  position: relative;
+  display: block;
+  opacity: 0;
+}
+
+.treino-conteudo li label {
+  font-size: 1rem;
+  background: #f0f0f0;
+  color: var(--cor-0);
+  padding: 8px 20px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.optionsTreino {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0px 8px;
+}
+
+.optionsTreino li {
+  display: grid;
+  position: relative;
+}
+
+dd {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .treino-conteudo li label:hover {
+    color: var(--cor-a1);
+  }
+
+  .treino-conteudo li label,
+  .option-input,
+  .treino-conteudo li dt {
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 630px) {
+  .registro {
+    padding-top: 10px;
+  }
+
+  .optionsTreino {
+    gap: 15px;
+  }
+}
