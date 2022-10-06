@@ -1,0 +1,51 @@
+#config {
+  background-image: url(../../imgs/background-registro.png);
+  background-position: 100% 100%;
+  background-size: 30%;
+  background-repeat: no-repeat;
+}
+
+.configuracao h1 {
+  margin-bottom: 40px;
+  color: var(--cor-c1);
+}
+
+.configuracao-item {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.configuracao-item button {
+  border: none;
+  background: var(--cor-v1);
+  border-radius: 4px;
+  padding: 4px 12px;
+  color: var(--cor-12);
+  transition: 0.3s;
+}
+
+.configuracao-item button:hover {
+  background: rgb(219, 63, 45);
+}
+
+.msgRemove {
+  margin-top: 4px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.msgRemove::after {
+  content: "✔";
+  color: green;
+  margin-left: 4px;
+}
+
+@media (min-width: 900px) {
+  .configuracao-item button {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configurações - FitTeacher</title>
+
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="header">
+
+    <div class="header-conteudo container">
+      <picture>
+        <img src="./imgs/avatar.svg" alt="">
+      </picture>
+      <p>Your Name</p>
+      <p>Personal Trainer</p>
+    </div>
+
+    <nav class="header-conteudo container">
+
+      <ul>
+        <li>
+          <a href="./registrar.html">
+            <img src="./imgs/registro.svg" alt="">
+            <h1 class="font-p">Registrar</h1>
+          </a>
+        </li>
+
+        <li>
+          <a href="./alunos.html">
+            <img src="./imgs/alunos.svg" alt="">
+            <h1 class="font-p">Alunos</h1>
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <img src="./imgs/configurar.svg" alt="">
+            <h1 class="font-p">Configurar</h1>
+          </a>
+        </li>
+
+      </ul>
+
+    </nav>
+  </header>
+
+  <main id="config">
+
+    <article class="logo">
+
+      <div class="logo-content container">
+        <a href="./index.html">
+          <h1>FitTeacher</h1>
+        </a>
+
+        <form action="">
+          <input type="text" name="search" id="search" placeholder="Procurar">
+        </form>
+
+        <ul>
+          <li><img src="./imgs/icons/sino.svg" alt=""></li>
+          <li><img src="./imgs/icons/settings.svg" alt=""></li>
+        </ul>
+      </div>
+
+    </article>
+
+    <div class="sidebar container">
+      <button class="sidebar-element">
+        <i class="bars"></i>
+        <i class="bars"></i>
+        <i class="bars"></i>
+      </button>
+    </div>
+
+
+    <section class="configuracao container">
+      <h1 class="subtitulo">Configurações</h1>
+
+      <div class="configuracao-item">
+        <p>Remover todos os alunos registrados</p>
+        <button type="button" data-remove>Remover</button>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script type="module" src="./script.js"></script>
+</body>
+
+</html>
