@@ -1,0 +1,57 @@
+@media (max-width: 630px) {
+  .sidebar {
+    text-align: right;
+  }
+
+  .sidebar.container {
+    margin-right: 0px;
+  }
+
+  .sidebar-element {
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    justify-self: right;
+    margin-top: 15px;
+  }
+
+  .bars {
+    display: block;
+    background: var(--cor-0);
+    height: 4px;
+    margin: 4px;
+    width: 30px;
+    border-radius: 2px;
+  }
+
+  .sidebar-element {
+    transition: 1s;
+  }
+
+  .sidebar-element.active .bars:first-child {
+    transform-origin: 0% 0%;
+    transform: rotate(34deg);
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .sidebar-element.active .bars:nth-child(2) {
+    transform: scaleY(0);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .sidebar-element.active .bars:last-child {
+    transform-origin: 0% 100%;
+    transform: rotate(-32deg);
+    transition: transform 0.4s ease-in-out;
+  }
+
+  @keyframes sideShow {
+    from {
+      transform: translate3d(-30px, 0, 0);
+    }
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}

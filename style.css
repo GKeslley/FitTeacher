@@ -8,5 +8,6 @@
 @import "./css/configuracao/configuracao.css";
 
 @import "./css/utilidades/utilidades.css";
+@import "./css/utilidades/sidebar.css";
 @import "./css/utilidades/componentes/cores.css";
 @import "./css/utilidades/componentes/tipografia.css";
