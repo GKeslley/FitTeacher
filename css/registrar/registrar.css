@@ -123,6 +123,21 @@ dd {
   display: none;
 }
 
+dd.ativo {
+  display: block;
+  animation: transition 0.3s forwards;
+  padding: 4px 0px;
+}
+
+@keyframes transition {
+  from {
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 @media (min-width: 900px) {
   .treino-conteudo li label:hover {
     color: var(--cor-a1);
