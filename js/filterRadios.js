@@ -1,3 +1,5 @@
+import checkIfInputIsTrue from "./checkInputs.js";
+
 export default function validityAndFilterRadios(event) {
   const content = document.querySelector("[data-content]");
   const buttonSubmit = document.querySelector("[data-submit]");
@@ -23,6 +25,8 @@ export default function validityAndFilterRadios(event) {
         const filterVerifyInputs = verifyInputsChecked.filter(
           (element) => element
         );
+
+        checkIfInputIsTrue(filterVerifyInputs, elementsContent[index]);
       });
     }
     buttonSubmit.addEventListener("click", validityAndFilterRadios);
