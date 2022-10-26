@@ -57,5 +57,21 @@ export default function registerUser(listaDeTreinos, element) {
     const clearRepeatNames = concatValues.filter(function (este, i) {
       return concatValues.indexOf(este) === i && este;
     });
+
+    // Caso o usuario exista
+    const erro = document.getElementById("messageError");
+    const content = document.querySelector(".registro");
+    if (Object.keys(localStorage).includes(name.value)) {
+      erro.innerText = "Esse usuário já existe";
+      content.appendChild(erro);
+    } else if (
+      !Object.keys(localStorage).includes(name.value) &&
+      fullName.trim()
+    ) {
+      setTimeout(() => {
+        localStorage.setItem(fullName.trim(), JSON.stringify(clearRepeatNames));
+      });
+      erro.style.display = "none";
+    }
   }
 }
