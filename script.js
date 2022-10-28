@@ -1,5 +1,5 @@
-import ChangeBackground from "./js/changeBackground.js";
-import validityAndFilterRadios from "./js/filterRadios.js";
+import ChangeBackground from "./js/registrar/changeBackground.js";
+import validityAndFilterRadios from "./js/registrar/filterRadios.js";
 import AccordionList from "./js/global/accordionList.js";
 import Sidebar from "./js/global/sidebar.js";
 
