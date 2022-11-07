@@ -1,5 +1,6 @@
 export default function initAlunos() {
   const userRegistrado = document.querySelector("[data-alunos]");
+  const deletUser = document.querySelector("[data-btn='delet']");
 
   if (userRegistrado) {
     Object.keys(localStorage).forEach((name, index) => {
@@ -29,5 +30,38 @@ export default function initAlunos() {
 
       userRegistrado.appendChild(ul);
     }
+
+    function deletUsers() {
+      const elementUser = document.querySelectorAll(".userContent");
+      const btnDelet = document.querySelectorAll(".btnDelet");
+      const contentPai = document.querySelector(".alunos-content");
+
+      elementUser.forEach((item) => {
+        item.classList.toggle("delet");
+
+        if (!item.classList.contains("delet")) {
+          deletUser.innerText = "Deletar";
+        } else if (item.classList.contains("delet")) {
+          deletUser.innerText = "Cancelar";
+        }
+      });
+
+      btnDelet.forEach((item) => {
+        item.addEventListener("click", (event) => {
+          event.preventDefault();
+          const user = item.parentElement;
+          const itemDelet =
+            item.parentElement.querySelector(".userName").innerText;
+
+          const arrNv = Array.from([contentPai.children]);
+
+          if (arrNv.length) {
+            contentPai.removeChild(user);
+            localStorage.removeItem(itemDelet);
+          }
+        });
+      });
+    }
+    deletUser.addEventListener("click", deletUsers);
   }
 }
