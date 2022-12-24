@@ -1,0 +1,23 @@
+{
+  "name": "fit-git",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GKeslley/FitTeacher.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GKeslley/FitTeacher/issues"
+  },
+  "homepage": "https://github.com/GKeslley/FitTeacher#readme",
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
