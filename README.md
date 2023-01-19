@@ -18,9 +18,9 @@
 <p style="center">O FitTeacher é uma maneira rápida de personal trainers registrarem alunos e seus respectivos treinos.</p>
 <p style="center">O registro funciona a partir de um formúlario onde:</p>
 
-- O usúario poderá cadastrar o nome, idade e peso do aluno.
+- O usuário poderá cadastrar o nome, idade e peso do aluno.
 
-- O usúario terá a liberdade de registrar quais os agrupamentos musculares mais convencionais o aluno realiza.
+- O usuário terá a liberdade de registrar quais os agrupamentos musculares mais convencionais o aluno realiza.
 
 <h2 style="center" id="executar">⚙ Como executar o projeto </h2>
 
